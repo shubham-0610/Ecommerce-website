@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - My eCommerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">eShop</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-right">
+            <a href="cart.html" class="cart">
+                <img src="images/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#" class="button signup-button">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Cart Page Content -->
+    <div class="cart-page">
+        <h1>Your Cart</h1>
+        <div class="cart-items"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize cart items on page load
+        document.addEventListener('DOMContentLoaded', displayCartItems);
+    </script>
+</body>
+</html>
